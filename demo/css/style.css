@@ -1,0 +1,48 @@
+header{
+    height: 60px;background: gray;
+    position: sticky;top: 0;z-index: 1111;
+}
+main{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    min-width: 200px;background: gray;
+}
+.sidebar-content
+{
+    width: 100%;
+   padding: 20px 10px;
+   height: 100%;
+}
+.select2-container{width: 100% !important;}
+.d-none{display: none !important;}
+/* Sidebar */
+.invoice-date:disabled,.invoice-date[readonly]{
+    background: #fff;
+}
+/* .input-group:focus{border-color: #86b7fe !important;}
+.form-control:focus ~ .input-group-text{border-color: #86b7fe !important;}
+.form-control:focus + .input-group{border-color: #86b7fe !important;} */
+.input-group{
+    border:1px solid #ced4da;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+.input-group>span,.input-group>input{border: none;}
+.input-group:focus-within {
+    border: 1px solid #86b7fe;
+  }
+  .input-group:focus-within *:focus {
+    border:1px solid #ced4da;
+  }
+.infotxt{cursor: pointer;}
+.select2-container .select2-selection--single{
+    height: 100%;
+    padding-top: 0.23rem;
+    padding-bottom: 0.23rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{height: 100%;}
+/* Sidebar */

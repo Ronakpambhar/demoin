@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="sidebar"></div>
+        <div class="sidebar-content">
+            <form action="">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <h5 class="mb-3">Invoice Information</h5>
+                        <div class="col-md-6 col-xl-5">
+                            <div class="mb-3">
+                                <label class="mb-2">Subject</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Invoice Date</label>
+                                <input class="form-control shadow-none invoice-date" placeholder="DD/MM/YYYY">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Due Date</label>
+                                <input class="form-control shadow-none invoice-date" placeholder="DD/MM/YYYY">
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2">Sales Commission</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-0 bg-white pe-0">$</span>
+                                    <input type="text" class="form-control shadow-none border-0 ps-1" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0 infotxt" data-toggle="infotxt">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588l-2.29.287l-.082.38l.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319c.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246c-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0z"/></g></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2">Account Name</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control shadow-none border-0" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0">
+                                        <button class="btn bg-none input-group-text border-0 shadow-none d-flex p-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588l-2.29.287l-.082.38l.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319c.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246c-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0z"/></g></svg>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2">Contact Name</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control shadow-none border-0" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0">
+                                        <button class="btn bg-none input-group-text border-0 shadow-none d-flex p-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588l-2.29.287l-.082.38l.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319c.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246c-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0z"/></g></svg>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2">Deal Name</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control shadow-none border-0" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0">
+                                        <button class="btn bg-none input-group-text border-0 shadow-none d-flex p-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588l-2.29.287l-.082.38l.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319c.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246c-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0z"/></g></svg>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-5">
+                            <div class="mb-3">
+                                <label class="mb-2">Sales Order</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Purchase Order</label>
+                                <input class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Excise Duty</label>
+                                <div class="input-group">
+                                    <span class="input-group-text border-0 bg-white pe-0">$</span>
+                                    <input type="text" class="form-control shadow-none border-0 ps-1" aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text border-0 infotxt" data-toggle="duty">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="currentColor"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="m8.93 6.588l-2.29.287l-.082.38l.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319c.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246c-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0z"/></g></svg>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label class="mb-2">Status</label>
+                                <select class="form-select status">
+                                    <option value="">Created</option>
+                                    <option value="">Approved</option>
+                                    <option value="">Delivered</option>
+                                    <option value="">Cancelled</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-4 justify-content-between">
+                        <h5 class="mb-3">Address Information</h5>
+                        <div class="col-md-6 col-xl-5">
+                            <div class="mb-3">
+                                <label class="mb-2">Billing Street</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Billing City</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Billing State</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Billing Code</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Billing Country</label>
+                                <select class="form-select">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-5">
+                            <div class="mb-3">
+                                <label class="mb-2">Shipping Street</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Shipping City</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Shipping State</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Shipping Code</label>
+                                <input type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="mb-2">Shipping Country</label>
+                                <select class="form-select">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/flatpickr.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".invoice-date").flatpickr({dateFormat: "d-m-Y",});
+
+            $('[data-toggle="infotxt"]').popover({
+                placement: 'right',
+                trigger: 'hover',
+                html: true,
+                content: 'This field acts as a calculator for any expression you input.<br> <b>E.g. 20+20</b> will yield <b>40</b> automatically',
+            });
+            $('[data-toggle="duty"]').popover({
+                placement: 'right',
+                trigger: 'hover',
+                html: true,
+                content: 'This field acts as a calculator for any expression you input.<br> <b>E.g. 20+20</b> will yield <b>40</b> automatically',
+            });
+
+            $('.status').select2({
+                minimumResultsForSearch: Infinity,
+                closeOnSelect: true,
+                static: true,
+                dropdownCssClass:'tblselect',
+            });
+        });
+    </script>
+</body>
+</html>
